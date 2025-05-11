@@ -1,3 +1,7 @@
+## Макет в Figma
+
+https://www.figma.com/design/ZwdsP3I9bVTFLyrSeE8QAW/Kugoo--?node-id=176-1279&t=7v2j2DosnRBBYrFr-0
+
 ## Git справочник
 
 ### Основные команды
