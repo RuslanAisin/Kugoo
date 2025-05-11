@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kugoo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -21,6 +27,129 @@
     <!-- <script src="main.js"></script> -->
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <nav class="header__top">
+        <ul class="header__top-menu">
+          <li><a class="header__top-menu-links" href="#">Сервис</a></li>
+          <li><a class="header__top-menu-links" href="#">Сотрудничество</a></li>
+          <li>
+            <a class="header__top-menu-links" href="#">Заказать звонок</a>
+          </li>
+        </ul>
+        <ul class="header__top-menu-sns">
+          <li>
+            <a href="#"
+              ><img
+                class="header__top-menu-sns-img"
+                src="/img/header_viber.svg"
+                alt="viber"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="header__top-menu-sns-img"
+                src="/img/header_ws.svg"
+                alt="whatsapp"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="header__top-menu-sns-img"
+                src="/img/header_tg.svg"
+                alt="telegram"
+            /></a>
+          </li>
+        </ul>
+        <div class="header__top-phone">
+          <a class="header__top-phone-paragraph" href="tel:+78005055461"
+            >+7 (800) 505-54-61</a
+          >
+          <img
+            class="header__top-phone-img"
+            src="/img/header_plus.svg"
+            alt="add"
+          />
+        </div>
+      </nav>
+
+      <div class="header__border"></div>
+
+      <div class="header__main">
+        <p class="header__main-logo">KUGOO</p>
+        <button class="header__main-btn">
+          <img
+            class="header__main-btn-img"
+            src="/img/header_menu.svg"
+            alt="menu"
+          />
+          Каталог
+        </button>
+        <div class="header__main-search">
+          <button class="header__main-search-btn">Везде ▼</button>
+          <input
+            type="text"
+            placeholder="Искать самокат KUGO"
+            class="header__main-search-input"
+          />
+          <button class="header__main-search-img-btn">
+            <img
+              class="header__main-search-img"
+              src="/img/header_search.svg"
+              alt="search"
+            />
+          </button>
+        </div>
+        <div class="header__main-cart">
+          <img src="/img/header_balance.svg" alt="balnce" />
+          <img src="/img/header_heart.svg" alt="heart" />
+          <p class="header__main-cart-paragraph">
+            <img
+              class="header__main-cart-img"
+              src="/img/header_shopping-cart.svg"
+              alt="cart"
+            />Корзина
+          </p>
+        </div>
+      </div>
+
+      <nav class="header__menu">
+        <a class="header__menu-link" href="#">О магазине</a>
+        <div class="header__menu-pay">
+          <a class="header__menu-link" href="#">Доставка и оплата</a>
+          <p class="header__menu-sale header__menu-discount">
+            Доступна рассрочка
+          </p>
+        </div>
+        <a class="header__menu-link" href="#">Тест-драйв</a>
+        <a class="header__menu-link" href="#">Блог</a>
+        <a class="header__menu-link" href="#">Контакты</a>
+        <div class="header__menu-pay">
+          <a class="header__menu-link" href="#">Акции</a>
+          <p class="header__menu-sale header__menu-percent">%</p>
+        </div>
+      </nav>
+
+      <div class="header__board">
+        <img
+          class="header__board-logo"
+          src="/img/kugoo_logo.png"
+          alt="kugoo_logo"
+        />
+        <div class="header__board-left">
+          <button class="header__board-left-btn-new">Новинка</button>
+          <p>Электросамокаты Kugoo Kirin от официального дилера</p>
+          <p>с бесплатной доставкой по РФ от 1 дня</p>
+          <button>Перейти в католог</button>
+          <div class="header__board-slide">1-5</div>
+        </div>
+        <div class="header__board-right">
+          <img src="/img/lighting.svg" alt="" />
+          <p>Тест-драйв и обучение</p>
+          <p>Бесплатно</p>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
