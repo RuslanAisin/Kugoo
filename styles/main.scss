@@ -94,6 +94,9 @@ body {
         margin-right: 13px;
       }
     }
+    &-btn:hover {
+      background-color: #311d46;
+    }
     &-search {
       display: flex;
       width: 603px;
@@ -124,6 +127,9 @@ body {
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
           background-color: $font-purple;
+        }
+        &-btn:hover {
+          background-color: #311d46;
         }
       }
     }
@@ -182,24 +188,84 @@ body {
   }
 
   &__board {
+    position: relative;
     height: 421px;
     margin-top: 31px;
-    display: flex;
+
+    &-blocks {
+      display: flex;
+      gap: 55px;
+    }
 
     &-logo {
       position: absolute;
       z-index: -1;
-      justify-self: anchor-center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     &-left {
+      position: relative;
+      top: 40px;
+      left: 135px;
       color: $font-white;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
 
-      &-btn-new {
+      &-btn-new,
+      &-btn-catalog {
+        position: relative;
         border: 1px solid $font-white;
         border-radius: 5px;
         padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
+      &-btn-new {
+        height: 24px;
+        width: 74px;
+        font-size: 14px;
+      }
+      &-btn-catalog {
+        background-color: $font-white;
+        color: $font-purple;
+        height: 53px;
+        width: 177px;
+        margin-top: 25px;
+        font-size: 16px;
+      }
+      &-btn-catalog:hover {
+        background-color: rgb(209 209 216);
+      }
+      &-btn-new:hover {
+        background-color: rgb(209 209 216);
+      }
+      &-title {
+        width: 615px;
+        height: 102px;
+        font-size: 35px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 36px;
+      }
+
+      &-text {
+        font-size: 20px;
+        margin-top: 7px;
+      }
+    }
+
+    &-right {
+      margin-top: 258px;
+      cursor: pointer;
+    }
+
+    &-slide {
+      margin-top: 46px;
+      inline-size: min-content;
     }
   }
 }
