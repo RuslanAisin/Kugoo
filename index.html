@@ -23,45 +23,62 @@
       media="screen"
       href="styles/main.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="styles/media.css"
+    />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <!-- <script src="main.js"></script> -->
   </head>
   <body>
-    <header class="header">
-      <nav class="header__top">
-        <ul class="header__top-menu">
-          <li><a class="header__top-menu-links" href="#">Сервис</a></li>
-          <li><a class="header__top-menu-links" href="#">Сотрудничество</a></li>
-          <li>
-            <a class="header__top-menu-links" href="#">Заказать звонок</a>
-          </li>
-        </ul>
-        <ul class="header__top-menu-sns">
-          <li>
-            <a href="#"
-              ><img
-                class="header__top-menu-sns-img"
-                src="img/header_viber.svg"
-                alt="viber"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="header__top-menu-sns-img"
-                src="img/header_ws.svg"
-                alt="whatsapp"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="header__top-menu-sns-img"
-                src="img/header_tg.svg"
-                alt="telegram"
-            /></a>
-          </li>
-        </ul>
+    <header class="header container">
+      <div class="header__mobile">
+        <img class="header__mobile-logo" src="img/logo-mobile.svg" alt="logo" />
+        <div class="header__mobile-text">
+          Открыть в приложении
+          <div class="header__mobile-stars">
+            <img src="img/mobile-star.svg" alt="" />
+            <img src="img/mobile-star.svg" alt="" />
+            <img src="img/mobile-star.svg" alt="" />
+            <img src="img/mobile-star.svg" alt="" />
+            <img src="img/mobile-star.svg" alt="" />
+            <img src="img/mobile-star.svg" alt="" />
+            <span class="header__mobile-stars-rate">2K</span>
+          </div>
+        </div>
+        <a
+          class="header__mobile-btn"
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=com.vehicle.kugooa&hl=ru&pli=1"
+        >
+          Открыть
+        </a>
+      </div>
+      <nav class="header__top start-position">
+        <a class="header__top-links" href="#">Сервис</a>
+        <a class="header__top-links" href="#">Сотрудничество</a>
+        <a class="header__top-links" href="#">Заказать звонок</a>
+        <div class="header__top-sns">
+          <a href="#"
+            ><img
+              class="header__top-sns-img"
+              src="img/header_viber.svg"
+              alt="viber"
+          /></a>
+          <a href="#"
+            ><img
+              class="header__top-sns-img"
+              src="img/header_ws.svg"
+              alt="whatsapp"
+          /></a>
+          <a href="#"
+            ><img
+              class="header__top-sns-img"
+              src="img/header_tg.svg"
+              alt="telegram"
+          /></a>
+        </div>
         <div class="header__top-phone">
           <a class="header__top-phone-paragraph" href="tel:+78005055461"
             >+7 (800) 505-54-61</a
@@ -76,8 +93,39 @@
 
       <div class="header__border"></div>
 
-      <div class="header__main">
+      <div class="header__main start-position">
         <p class="header__main-logo">KUGOO</p>
+        <div class="header__mobile-icons">
+          <img src="img/call-mobile.svg" alt="phone" />
+          <div class="menu">
+            <input
+              type="checkbox"
+              id="burger-checkbox"
+              class="burger-checkbox"
+            />
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <a href="#" class="menu-item">О магазине</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#" class="menu-item">Доставка и оплата</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#" class="menu-item">Тест-драйв</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#" class="menu-item">Блог</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#" class="menu-item">Контакты</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="#" class="menu-item">Акции</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <button class="header__main-btn">
           <img
             class="header__main-btn-img"
@@ -115,7 +163,7 @@
       </div>
 
       <nav class="header__menu">
-        <a class="header__menu-link" href="#">О магазине</a>
+        <a class="header__menu-link start-position" href="#">О магазине</a>
         <div class="header__menu-pay">
           <a class="header__menu-link" href="#">Доставка и оплата</a>
           <p class="header__menu-sale header__menu-discount">
