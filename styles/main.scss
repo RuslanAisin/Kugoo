@@ -905,10 +905,11 @@ body {
 // Footer
 .footer {
   display: flex;
-  margin-top: 46px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 46px;
+  background-color: #f4f7fb;
   gap: 50px;
   &__up {
     display: flex;
@@ -927,6 +928,9 @@ body {
       flex-direction: column;
       margin-top: 17px;
       gap: 10px;
+      img {
+        background-color: $font-white;
+      }
     }
     &__text {
       font-size: 14px;

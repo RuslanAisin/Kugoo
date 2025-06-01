@@ -810,10 +810,11 @@ body {
 
 .footer {
   display: flex;
-  margin-top: 46px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 46px;
+  background-color: #f4f7fb;
   gap: 50px;
 }
 .footer__up {
@@ -833,6 +834,9 @@ body {
   flex-direction: column;
   margin-top: 17px;
   gap: 10px;
+}
+.footer__up__links img {
+  background-color: #ffffff;
 }
 .footer__up__text {
   font-size: 14px;
