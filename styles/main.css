@@ -812,6 +812,9 @@ body {
   display: flex;
   margin-top: 46px;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
 }
 .footer__up {
   display: flex;
@@ -857,6 +860,52 @@ body {
   gap: 46px;
 }
 .footer__border {
-  margin-top: 49px;
   border-bottom: 1px solid #5d6c7b;
+}
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  gap: 59px;
+}
+.footer__links__kugo {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer__links__store {
+  gap: 10px;
+}
+.footer__requisits {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer__requisits__text {
+  display: flex;
+  font-size: 12px;
+  color: #5d6c7b;
+  font-weight: 400;
+  gap: 44px;
+  margin-right: 383px;
+}
+.footer__requisits__chat {
+  display: flex;
+  margin-left: 37px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__requisits__links {
+  display: flex;
+  align-items: center;
+}
+.footer__sns {
+  display: flex;
+  gap: 14px;
+  margin-left: 17px;
+  align-items: center;
+}
+.footer__sns-img {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

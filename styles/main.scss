@@ -907,6 +907,9 @@ body {
   display: flex;
   margin-top: 46px;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
   &__up {
     display: flex;
     gap: 125px;
@@ -952,7 +955,53 @@ body {
     gap: 46px;
   }
   &__border {
-    margin-top: 49px;
     border-bottom: 1px solid #5d6c7b;
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    gap: 59px;
+    &__kugo {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    &__store {
+      gap: 10px;
+    }
+  }
+  &__requisits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    &__text {
+      display: flex;
+      font-size: 12px;
+      color: #5d6c7b;
+      font-weight: 400;
+      gap: 44px;
+      margin-right: 383px;
+    }
+    &__chat {
+      display: flex;
+      margin-left: 37px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &__links {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__sns {
+    display: flex;
+    gap: 14px;
+    margin-left: 17px;
+    align-items: center;
+    &-img {
+      display: flex;
+      align-items: center;
+    }
   }
 }
