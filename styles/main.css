@@ -859,7 +859,7 @@ body {
   display: flex;
   gap: 46px;
 }
-.footer__border {
+.footer__border__up, .footer__border__down {
   border-bottom: 1px solid #5d6c7b;
 }
 .footer__links {
@@ -908,4 +908,8 @@ body {
 .footer__sns-img {
   display: flex;
   align-items: center;
+}
+
+.mobile__widget {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

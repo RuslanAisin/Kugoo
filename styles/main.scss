@@ -954,7 +954,8 @@ body {
     display: flex;
     gap: 46px;
   }
-  &__border {
+  &__border__up,
+  &__border__down {
     border-bottom: 1px solid #5d6c7b;
   }
   &__links {
@@ -1004,4 +1005,8 @@ body {
       align-items: center;
     }
   }
+}
+
+.mobile__widget {
+  display: none;
 }
