@@ -113,14 +113,15 @@
   }
   .header__board-left {
     position: absolute;
-    top: 15px;
-    left: 20px;
+    top: 10px;
+    left: 15px;
+    max-width: 100%;
   }
   .header__board-left-btn-catalog {
     display: none;
   }
   .header__board-left-title, .header__board-left-text {
-    max-width: 28%;
+    max-width: 33%;
     font-size: 12px;
     margin-top: 5px;
     height: unset;
