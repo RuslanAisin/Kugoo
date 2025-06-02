@@ -231,7 +231,7 @@
     background-color: #fff;
     padding: 8px 30px;
     gap: 31px;
-    border: 1px solid gray;
+    border-top: 1px solid gray;
   }
   .mobile__widget img {
     height: 32px;
@@ -247,7 +247,6 @@
   position: relative;
   cursor: pointer;
   display: block;
-  position: relative;
   border: none;
   background: transparent;
   width: 15px;
@@ -267,7 +266,6 @@
 
 .burger::before {
   top: 0;
-  box-shadow: 0 11px 0 #000;
   transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
 }
 
@@ -277,15 +275,15 @@
 }
 
 .burger-checkbox:checked + .burger::before {
-  top: 11px;
-  transform: rotate(45deg);
+  top: 6px;
+  transform: translateY(-50%) rotate(45deg);
   box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
 }
 
 .burger-checkbox:checked + .burger::after {
-  bottom: 11px;
-  transform: rotate(-45deg);
+  bottom: 6px;
+  transform: translateY(50%) rotate(-45deg);
   transition: bottom 0.3s, transform 0.3s 0.15s;
 }
 
