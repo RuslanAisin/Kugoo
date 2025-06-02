@@ -68,8 +68,6 @@
     gap: 17px;
     max-width: -moz-min-content;
     max-width: min-content;
-    width: 100%;
-    margin: 0 auto;
   }
   .header__main-logo {
     margin-right: 0;
@@ -232,7 +230,6 @@
 .burger-checkbox {
   position: absolute;
   visibility: hidden;
-  width: 100%;
 }
 
 .burger {
@@ -343,4 +340,6 @@
   font-size: 12px;
   font-weight: 400;
   gap: 20px;
+  justify-content: center;
+  cursor: pointer;
 }/*# sourceMappingURL=media.css.map */
